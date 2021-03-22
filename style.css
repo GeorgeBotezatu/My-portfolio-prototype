@@ -1,0 +1,386 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ceva{
+color:#5680e9;
+color:#84ceeb;
+color:#5ab9ea;
+color:#c1c8e4;
+color:#8860d0;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+background:#84ceeb;
+font-family: 'Montserrat Alternates',sans-serif;
+overflow-x: hidden;
+position: relative;
+
+}
+/* Main section */
+main{
+    position: absolute;
+}
+#logo{
+    font-family: 'Revalia',cursive;
+    color:white;
+}
+.nav-header{
+    min-height: 10vh;
+    font-size:1.6rem;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    color:white;
+    width:80%;
+    margin:auto;
+    padding:2rem 0rem;
+    position:relative;
+    z-index:2;
+}
+.line1,
+.line2,
+.line3{
+    width:4rem;
+    height: 0.4rem;
+    margin:0.8rem;
+    background: white;
+    pointer-events: none;
+}
+
+.slide{
+    min-height:100vh;
+    margin:2rem auto 0 auto;
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    background: #84ceeb;
+    
+}
+.my-desc{
+    display:flex;
+    flex-direction: column;
+    
+    align-items: flex-start;
+    flex:1;
+    flex-basis: 30rem;
+    position:relative;
+}
+.my-img{
+    position: relative;
+    flex:1;
+    flex-basis: 30rem;
+    overflow: hidden;
+}
+.my-img img{
+    width:85%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: #000000;
+}
+.my-desc h2{
+    font-family: 'Revalia',cursive;
+    font-size:5rem;
+    color:#8860d0;
+}
+.my-desc p{
+    padding: 3rem 0rem;
+    font-size:2rem;
+    color:white;
+}
+
+/* Nav section */
+body.hide {
+    overflow: hidden;
+}
+.nav-bar{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #c1c8e4;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    z-index:1;
+    opacity:1;
+    clip-path: circle(50px at 100% -10% );
+    -webkit-box-pack: circle(50px at 100% -10%);
+   
+}
+
+.burger{
+    cursor:pointer;
+}
+.nav-links{
+    font-size:3rem;
+    flex-basis: 30rem;
+    
+    
+}
+.nav-links h3{
+   padding:3rem 0rem;
+    
+}
+.nav-links h3 a{
+    color:white;
+}
+.contact{
+    flex-basis:50rem;
+}
+
+.contact h2{
+    font-size:5rem;
+    padding: 2rem 0rem;
+}
+
+.contact p{
+    font-size:1.5rem;
+    line-height:2rem;
+}
+
+.reveal-img,
+.reveal-text{
+    position:absolute;
+    width:150%;
+    height:200%;
+    background: #84ceeb;
+    left:0;
+    bottom:-15%;
+
+}
+
+.cursor {
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid #5ab9ea;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+    transition-property: background, transform;
+    transform-origin: 75% 75%;
+}
+.cursor.nav-active {
+    background: #5680e9;
+    transform: scale(3);
+}
+.cursor-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 0.5rem;
+    transform: translate(-50%, -50%);
+
+}
+scrollmagic-pin-spacer {
+    position: static !important;
+}
+
+/* Skill */
+.my-skills{
+    flex:1;
+    flex-basis: 30rem;
+    color:black;
+
+}
+.my-skills h3{
+  font-family: 'Revalia',
+  cursive;
+  font-size:5rem;
+  color:#000000;
+}
+.skill-container{
+      width: 100%;
+      background: #c1c8e4;
+      border-radius:2rem;
+}
+.skills-container p{
+    padding-top:2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+.skill{
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: #c1c8e4;
+    font-weight: bold;
+    border-radius:2rem;
+}
+.html {
+    width: 90%;
+    background-color: #8860d0;
+}
+.css {
+    width: 80%;
+    background-color: #8860d0;
+}
+.javascript {
+    width: 70%;
+    background-color: #8860d0;
+}
+.node {
+    width: 45%;
+    background-color: #8860d0;
+}
+.mongo {
+    width: 40%;
+    background-color: #8860d0;
+}
+.sql {
+    width: 40%;
+    background-color: #8860d0;
+}
+.java {
+    width: 50%;
+    background-color: #8860d0;
+}
+.c {
+    width: 60%;
+    background-color: #8860d0;
+}
+.adobe {
+    width: 60%;
+    background-color: #8860d0;
+}
+/* Projects */
+.projects-container{
+    display:flex;
+    flex-direction: column;
+
+}
+.project{
+    flex:1;
+    flex-basis: 30rem;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.project-img{
+     position: relative;
+     flex:1;
+     flex-basis: 30rem;
+     overflow: hidden;
+     margin-right:2rem;
+     
+}
+.project-img img{
+    width:100%;
+    height: 80%;
+    object-fit: cover;
+ border-radius: 10px;
+}
+.project-desc{
+      position: relative;
+      flex:1;
+      flex-basis: 30rem;
+     
+}
+.project-desc h2{
+    font-size:3rem;
+}
+.project-desc p{
+    margin-top:1rem;
+    font-size:1.8rem;
+    
+}
+
+.projects-container h3{
+    font-size:4rem;
+    color:#8860d0;
+    text-align:center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Contact Page */
+.contact-container {
+    height: 100vh;
+    display: flex;
+    background-color: #84ceeb;
+    transition: background 0.5s ease;
+    position: relative;
+    color: black;
+}
+
+.field-name,
+.field-email,
+.field-textarea,
+.field-finish {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 50px;
+    widows: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    z-index: 900;
+}
+
+.field-name i,
+.field-email i,
+.field-textarea i,
+.field-finish i {
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+div.inactive {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 50%);
+}
+
+div.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(-50%, -50%);
+}
+
+.field-name input,
+.field-email input,
+.field-textarea textarea,
+.field-finish input {
+    background: none;
+    border: none;
+    flex: 1;
+    height: 100%;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: white;
+    border: 0 none;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
